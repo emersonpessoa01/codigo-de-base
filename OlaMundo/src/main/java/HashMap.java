@@ -1,8 +1,6 @@
-import java.util.HashMap;
-
-public class Main {
+public class HashMap {
     public static void main(String[] args) {
-        HashMap<String, String> dicionario = new HashMap<>();
+        java.util.HashMap<String, String> dicionario = new java.util.HashMap<>();
         dicionario.put("Palavra1", "Significado da Palavra 1");
         dicionario.put("Palavra2", "Significado da Palavra 2");
         dicionario.put("Palavra3", "Significado da Palavra 3");
@@ -18,7 +16,7 @@ public class Main {
 
 
         // Exemplo de nome de produto e quantidade
-        HashMap<String, Integer> estoque = new HashMap<>();
+        java.util.HashMap<String, Integer> estoque = new java.util.HashMap<>();
         estoque.put("Maçã", 10);
         estoque.put("Uva", 30);
         estoque.put("Melão", 20);
