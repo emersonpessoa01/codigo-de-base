@@ -27,5 +27,17 @@ public class Main {
         } else {
             System.out.println("Erro ao adicionar Cliente 2.");
         }
+
+        // Buscar cliente por ID
+        String idBusca = "2"; // Altere para testar outros IDs
+        Cliente clienteEncontrado = clienteService.buscarClientePorId(idBusca);
+        if (clienteEncontrado != null) {
+            System.out.println("\n--- Cliente encontrado pelo ID " + idBusca + " ---");
+            System.out.println("ID: " + clienteEncontrado.getId());
+            System.out.println("Nome: " + clienteEncontrado.getNome());
+            System.out.println("CPF: " + clienteEncontrado.getCpf());
+        } else {
+            System.out.println("Nenhum cliente encontrado com o ID: " + idBusca);
+        }
     }
 }

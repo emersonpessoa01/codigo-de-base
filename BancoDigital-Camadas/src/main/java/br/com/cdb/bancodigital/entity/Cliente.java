@@ -8,7 +8,8 @@ public class Cliente {
 
     public Cliente(String nome, String cpf, String id) {
         this.nome = nome;
-//        this.cpf = cpf;
+        this.cpf = cpf;
+        this.id = id; // O id pode ser passado diretamente, mas geralmente é gerado pelo DAO
 //
         // id será atribuído no DAO
     }

@@ -34,4 +34,8 @@ public class ClienteService {
     private boolean validarNome(String nome) {
         return nome != null && !nome.trim().isEmpty() && nome.length() <= 50; // Exemplo de validação simples
     }
+    // Método para buscar um cliente por ID
+    public Cliente buscarClientePorId(String id) {
+        return clienteDAO.buscarClientePorId(id);
+    }
 }
