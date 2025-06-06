@@ -1,4 +1,5 @@
 package br.com.cdb.bancodigital.entity;
+
 //Para guardar a entidade de dados do cliente
 public class Cliente {
     private String nome;
@@ -7,11 +8,15 @@ public class Cliente {
 
     public Cliente(String nome, String cpf, String id) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.id = id;
+//        this.cpf = cpf;
+//
+        // id será atribuído no DAO
     }
 
-    public Cliente() {
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+
     }
 
     public String getNome() {
